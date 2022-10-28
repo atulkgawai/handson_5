@@ -1,0 +1,128 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: yellow;
+}
+.container {
+    margin: 0% 30% 0% 30%;
+}
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+.card {
+    background-color: darkcyan;
+    height: 8rem;
+    width: 8rem;
+    animation: card1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+  }
+  #card2 {
+    background-color: silver;
+    animation-duration: 3s;
+    animation-direction: reverse; 
+  }
+  @keyframes card1 {
+    0% {
+        transform: none;
+    }
+    10% {
+        transform: skewY(20deg);
+        transition: 1s ease-in-out;
+    }
+    25% {
+        transform: skewY(-20deg);
+        transition: 1s ease-in-out;
+    }
+    50% {
+        transform: skewY(20deg);
+        transition: 1s ease-in-out;
+    }
+    90% {
+        transform: skewY(-20deg);
+        transition: 1s ease-in-out;
+    }
+    100% {
+        transform: none;
+    }
+  }
+
+  #card3 {
+    animation: card3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes card3 {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: rotate(360deg);
+        transition: 2s;
+    }
+    100% {
+        transform: none;
+    }
+  }
+  #card4 {
+    animation: card4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes card4 {
+    0% {
+        transform: none;
+    }
+    25% {
+        transform: scaleX(2);
+    }
+  }
+
+  #card5 {
+    animation: card5;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes card5 {
+    0% {
+        transform: none;
+    }
+    25% {
+        transform: scaleY(1.2);
+    }
+  }
+
+  /* index2 */
+  body {
+    margin: 0px;
+    background-color: yellow;
+}
+.container {
+    margin: 0% 30% 0% 30%;
+    display: flex;
+    justify-content: center;
+}
+.card {
+    height: 8rem;
+    width: 8rem;
+    background-color: green;
+    margin: 2rem;
+    transition: 2s;
+}
+#card1:hover {
+    width: 30rem;
+}
+#card2:hover {
+    width: 30rem;
+    height: 20rem;
+}
+h1 {
+    color: chocolate;
+    text-align: center;
+}
+
+
+  

@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-image: url(./sky.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow-x: hidden;
+        }
+        .highway {
+            height: 15rem;
+            width: 500%;
+            background-image: url(./road.jpg);
+            background-size: cover;
+            position: absolute;
+            bottom: 0px;
+            z-index: 1;
+            background-repeat: repeat-x;
+            animation: highway 5s linear infinite;
+        }
+        @keyframes highway {
+            100% {
+                transform: translateX(-3400px);
+            }
+        }
+        #city {
+            height: 20rem;
+            width: 300%;
+            position: absolute;
+            top: 18rem;
+            background-repeat: repeat-x;
+            animation: city 20s linear infinite;
+        }
+        @keyframes city {
+            100% {
+                transform: translateX(-1400px);
+            }
+        }
+        #car {
+            width: 42rem;
+            height: 12rem;
+            position: absolute;
+            top: 26rem;
+            left: 6rem;
+            z-index: 2;
+        }
+        #wheel {
+            height: 6rem;
+            width: 6rem;
+            position: absolute;
+            top: 33rem;
+            left: 11rem;
+            z-index: 4;
+            animation: rotate 0.1s infinite linear;
+        }
+        #wheel2 {
+            height: 6rem;
+            width: 6rem;
+            position: absolute;
+            top: 33rem;
+            left: 36rem;
+            z-index: 4;
+            animation: rotate 0.1s infinite linear;
+        }
+        @keyframes rotate {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+        #sun {
+            height: 4rem;
+            width: 4rem;
+            position: absolute;
+            top: 7rem;
+            right: 4rem;
+            animation: city 120s linear infinite;
+        }
+        #flag {
+            z-index: 999;
+            height: 4rem;
+            width: 4rem;
+            position: absolute;
+            bottom: 14rem;
+            right: 46rem;
+            background-color: transparent;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="highway"></div>
+        <img src="./city (1).png" alt="" id="city">
+        <img src="./car.png" alt="" id="car">
+        <img src="./wheel.png" alt="" id="wheel">
+        <img src="./wheel.png" alt="" id="wheel2">
+        <img src="./sun (1).png" alt="" id="sun">
+        <img src="./flag.png" alt="" id="flag">
+
+    </div>
+
+</body>
+</html>
